@@ -1,0 +1,15 @@
+li {
+    list-style-type: none;
+    width: 33%;
+    padding: 10px 15px;
+    margin-bottom: 5px;
+    border-radius: 25px;
+}
+
+/* Your code here */
+
+/* we can use the attribute selector to target any elements 
+ with data- (our case data-type) and give it styling */ 
+li[data-type="dairy"] {
+    background-color : blue
+}

@@ -1,0 +1,62 @@
+/* ===== Problem 1 ===== */
+
+.rocket_svg {
+    height: 200px;
+    width: auto;
+    margin-left: 300px;
+    /* Your code here */
+    /* transition: transform 2s; */
+    transition: 2s cubic-bezier(1,-0.87, 0, 1.33);
+}
+
+.rocket_svg:hover {
+    transform: rotate(750deg);
+}
+
+/* the purpose of the 750deg rotate is to just showcase how our cubic-bezier is working a little more clearly */
+
+/* Create rocket hover animation here
+
+
+/* ===== Problem 2 ===== */
+
+.astronaut_svg {
+    height: 200px;
+    width: auto;
+    margin-left: 200px;
+    /* Your code here */
+
+    transition: transform ease 2s;
+    
+    
+}
+
+.astronaut_svg:hover {
+    transform: translate(100px, 0);
+    /* margin-left: -600px; */
+    /* height: 500px; */
+}
+
+/* Create astronaut hover animation here
+
+/* ======= BONUS ======= */
+
+.earth_svg {
+    height: 200px;
+    width: auto;
+    margin-left: 300px;
+    /* Your animation here */
+    animation: spin 2s infinite linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+

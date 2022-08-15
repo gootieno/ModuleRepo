@@ -1,0 +1,36 @@
+#box-container {
+    height:500px;
+    width: 500px;
+
+    border: 4px solid red;
+
+    display: flex;
+}
+
+.boxes {
+    height: 50%;
+    width: 50%;
+
+    border: 2px solid red;
+
+
+    transition: height 2s, background-color 2s;
+}
+
+.boxes:hover {
+    height: 100%;
+    background-color: magenta;
+}
+
+#box-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#box-1 > .boxes-children {
+    border: 3px dotted green;
+    /* width: fit-content; */
+    /* width: 100px; */
+    
+}
