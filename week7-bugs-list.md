@@ -15,3 +15,11 @@ Which of the following CSS properties is used on a container in the Flexible Box
 Week 7 assessment for July needs to remove the following submission task:
 
 1. Re-run all unit tests and fix any syntax errors that are crashing the    tests. If the unit tests crash, or do not run, you will receive a zero for the coding portion of the assessment
+
+
+
+
+## Changes To Be Made For The Week
+
+Monday/Tuesday Homework: 
+Move Tuesdays HTTP Request and Response Cycle Homework (marked as review) to Monday right before the Week 8 Framing - I practice.  
