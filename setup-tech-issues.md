@@ -1,7 +1,22 @@
-M1 Npm install not working
-Nvm install 14
-Nvm use 14
+M1 npm install not working
+```
+nvm install 14
+nvm use 14
+```
+M2 npm install not working
+```
+type pwd in directory and make sure no spaces or forward slashes are present in the file path. Fix dir names with spaces 
+and try npm install again. If that doesn't work use the m1 solution now. 
+```
+npm install still doesn't work!
+```
+run pwd on directory doing installs and make sure directory does not have any forward slashes or special characters outside of '-'
+```
+
+Mx chip macs showing error: CPU: bad allocation .. 
+```
 softwareupdate --install-rosetta
+```
 
 If any issues occur with install close and open terminal
 
