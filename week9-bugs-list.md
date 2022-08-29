@@ -8,4 +8,7 @@ Just has a small typo should be:
 
 **How do you change the text in the title tag inside of the head of an HTML document?**
 
-## Practice Assessment and Assessment Bugs
+
+
+
+# Practice Assessment and Assessment Bugs
