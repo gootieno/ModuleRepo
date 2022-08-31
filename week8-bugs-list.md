@@ -6,6 +6,7 @@ On the response scenario practice, the GIPHY question is phrased as having multi
 
 ```GIPHY: Which option(s) above could represent plausible HTTP response components for this scenario?```
 
+
 # Practice Assessment and Assessment Bugs
 
 ## **Week 8 - Practice Assessment**
