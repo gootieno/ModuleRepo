@@ -23,18 +23,25 @@ If any issues occur with install close and open terminal
 CYPRESS
 
 Problem: Your system is missing the dependency: Xvfb
-Solution 1: Have them run - sudo apt update
-
-- sudo apt upgrade
-- sudo apt-get install libgtk2.0-0 libgtk-3-0 libgbm-dev libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2 libxtst6 xauth xvfb
-  Solution 2: Have them run
-- sudo apt-get update
-- sudo apt-get install libgtk2.0-0 libgtk-3-0 libgbm-dev libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2 libxtst6 xauth xvfb
+Solution 1: Have them run:
+```
+sudo apt update
+sudo apt upgrade
+sudo apt-get install libgtk2.0-0 libgtk-3-0 libgbm-dev libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2 libxtst6 xauth xvfb
+```
+Solution 2: Have them run:
+```
+sudo apt-get update
+sudo apt-get install libgtk2.0-0 libgtk-3-0 libgbm-dev libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2 libxtst6 xauth xvfb
+```
 
 Problem: Cypress verification timed out after 30000 milliseconds
-Solution: increase the default timeout.
+Solution: 
+increase the default timeout.
 Open node_modules\cypress\lib\tasks\verify.js, search for VERIFY_TEST_RUNNER_TIMEOUT_MS and change it from 30000 (default) to 100000.
 Save the file, then try to open the runner.
+
+timeout issue still happening? Make sure the code is absolutely correct 
 
 Problem: Cypress not found (on Mac)
 Solution: download Cypress directly from our CDN
