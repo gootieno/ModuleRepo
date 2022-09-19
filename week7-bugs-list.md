@@ -2,6 +2,7 @@
 
 ## Practice Assessment and Assessment Bugs
 
+Change the readme to have them include their name in their assessment turn in's
 
 ## Changes To Be Made For The Week
 
