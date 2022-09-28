@@ -1,5 +1,8 @@
 # Week 9 Bugs List
 
+Audit Create/Remove Event listeners practice. Make events more clear.
+
+
 
 ## **Default Behavior Quiz**
 
@@ -12,7 +15,7 @@
 Directions:  Select all of the elements with the class of "odd" and add a box shadow. You
 may choose your own box-shadow values.
 
-Problem that needs to be addressed:  Students are supposed to grab all elements with the class of "odd" and add a box shadow, however the specs passed a student when they just used a query selector to grab the first item with the class of odd. 
+Problem that needs to be addressed:  Students are supposed to grab all elements with the class of "odd" and add a box shadow, however the specs passed a student when they just used a query selector to grab the first item with the class of odd.
 
 CORRECT ANSWER:
 
