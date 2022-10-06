@@ -1,4 +1,4 @@
-M1 npm install not working
+Npm install not working
 ```
 nvm install 14
 nvm use 14
