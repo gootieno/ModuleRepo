@@ -28,3 +28,15 @@
     * Make sure Hyper-V (Sometimes isn't on the list), Windows Subsystem For Linux, Windows Hypervisor Platform, and Virtual Machine Platform are all enabled.
     * Restart PC and try wsl --set-version Ubuntu 2 again
     * If still getting the message, they need to go into their BIOS settings and turn virtualization on in BIOS
+
+
+# Problem - Student forgot their Ubuntu password and cannot run "Sudo" commands.
+
+## Steps to take:
+- close ubuntu terminals but get/remember account name
+- open admin powershell
+- wsl -u root
+- password accountNameThatNeedsPasswordChanged
+- enter password
+- do it again
+- success!
