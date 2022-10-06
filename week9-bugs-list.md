@@ -1,6 +1,14 @@
 # Week 9 Bugs List
 
+
+## **MAC Adressess and Ports**
+
+In the reading it says it will "IP address ranges and special cases"
+
+but never covers or mentions IP addresses.
+
 Audit Create/Remove Event listeners practice. Make events more clear.
+
 
 
 
@@ -28,3 +36,10 @@ EXAMPLE OF INCORRECT ANSWER THAT SPECS CONSIDERED CORRECT:
 
 const odd = document.querySelector(".odd");
 odd.style.boxShadow = "10px 10px 10px black"
+
+
+**Problem 9 on Coding Part 2 of Practice Assessment**
+
+Fix wording/display of Word/Defintion
+
+Be more explicity about which word/definition it wants. If you don't give it the first word/definition it'll fail specs
