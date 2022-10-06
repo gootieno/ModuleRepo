@@ -1,10 +1,15 @@
 # Week 9 Bugs List
 
+
 ## **MAC Adressess and Ports**
 
 In the reading it says it will "IP address ranges and special cases"
 
 but never covers or mentions IP addresses.
+
+Audit Create/Remove Event listeners practice. Make events more clear.
+
+
 
 
 ## **Default Behavior Quiz**
