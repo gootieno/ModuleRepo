@@ -1,4 +1,12 @@
-Npm install not working
+# **SSH**
+
+Bills SSH walkthrough:
+https://hackmd.io/@AgDXdHgSSPKsJIhCxlaTuA/BJtNu88fF
+
+# **NPM Issues**
+
+
+npm install not working
 ```
 nvm install 14
 nvm use 14
