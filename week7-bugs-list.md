@@ -4,6 +4,8 @@
 
 Change the readme to have them include their name in their assessment turn in's
 
+MC Question: Which options would CSS would interpret as the color solid black
+
 ## Changes To Be Made For The Week
 
 # Monday/Tuesday Homework:
