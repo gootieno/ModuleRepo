@@ -30,13 +30,14 @@
     * If still getting the message, they need to go into their BIOS settings and turn virtualization on in BIOS
 
 
-# Problem - Student forgot their Ubuntu password and cannot run "Sudo" commands.
+# Downloading cypress does your workspace require a proxy to be used
 
-## Steps to take:
-- close ubuntu terminals but get/remember account name
-- open admin powershell
-- wsl -u root
-- password accountNameThatNeedsPasswordChanged
-- enter password
-- do it again
-- success!
+```
+Have them manually download cypress from here:
+
+https://docs.cypress.io/guides/getting-started/installing-cypress.html#Direct-download
+
+then run:
+
+CYPRESS_INSTALL_BINARY=~/Downloads/cypress.zip npm install cypress --save-dev
+```
