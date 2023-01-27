@@ -1,13 +1,31 @@
-const { sendFormPage } = require("./routes");
-const { parseBody } = require("./parse-body");
-let server;
+const http = require('http');
 
-/******************************************************************************/
-/******************* DO NOT CHANGE THE CODE ABOVE THIS LINE *******************/
+const server = http.createServer((req, res) => {
+  console.log(`${req.method} ${req.url}`);
 
-// Your code here
+  let reqBody = "";
+  req.on("data", (data) => {
+    reqBody += data;
+  });
 
-/******************************************************************************/
-/******************* DO NOT CHANGE THE CODE BELOW THIS LINE *******************/
+  // When the request is finished processing the entire body
+  req.on("end", () => {
+    // Parsing the body of the request
+    if (reqBody) {
+      req.body = reqBody
+        .split("&")
+        .map((keyValuePair) => keyValuePair.split("="))
+        .map(([key, value]) => [key, value.replace(/\+/g, " ")])
+        .map(([key, value]) => [key, decodeURIComponent(value)])
+        .reduce((acc, [key, value]) => {
+          acc[key] = value;
+          return acc;
+        }, {});
+      console.log(req.body);
+    }
+  });
+});
 
-module.exports = { server };
+const port = 5000;
+
+server.listen(port, () => console.log('Server is listening on port', port));
