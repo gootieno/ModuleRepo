@@ -84,3 +84,33 @@ or
 npm clear cache --force
 npm install cypress
 ```
+
+Problem:
+
+```
+sh: cypress: command not found
+```
+
+Solution:
+Install cypress globally using
+```
+npm install -g cypress@9.2.0
+```
+
+
+# FORGOT UBUNTU PASSWORD
+
+Open powershell:
+```
+ubuntu config --default-user root
+```
+Open Ubuntu:
+```
+passwd STUDENTSUSERNAME
+```
+change their password
+
+Go back to Powershell:
+```
+ubuntu config --default-user STUDENTSUSERNAME
+```
