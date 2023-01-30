@@ -45,7 +45,7 @@ Fix wording/display of Word/Defintion
 Be more explicity about which word/definition it wants. If you don't give it the first word/definition it'll fail specs
 
 
-** Cannot zip 
+## Cannot zip 
 zip -r thing.zip ./directory-to-assessment
 
 If they don't have command line zip, sudo apt install zip
