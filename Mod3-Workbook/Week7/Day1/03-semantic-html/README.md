@@ -1,18 +1,20 @@
 # Walkthrough: Semantic HTML (SOLO)
 
 In this walkthrough, you will be building an HTML web page with semantic HTML
-elements.
+elements. At the end of the practice, you can run a suite of tests to confirm
+that you completed all of the required elements.
 
 ## Set up
 
-So, create a new directory, open Visual Studio Code to that directory, create a
-file in it named __index.html__, and open the HTML document in a browser.
-You will add semantic HTML elements to this HTML document.
+1. Clone the starter from GitHub
+2. Run `npm install` to install dependencies
+3. Create a file at the root of the project directory named __index.html__, and
+open the HTML document in a browser.
 
 ## Important Note
 
 Type along with this walkthrough to familiarize (or continue to practice)
-creating HTML documents. You are going to build your own HTML reference sheet.
+creating HTML documents. You are going to build your HTML reference sheet.
 You can come back and refer to this if you forget how to add an image to an
 HTML document, or how to properly structure tabular data.
 
@@ -26,6 +28,12 @@ doing while typing. Don't just copy. Copy and think! If you practice writing out
 all your code now, before long you'll be closing elements and using double
 quotations without having to think about it. This will make things much easier
 when the projects that you're expected to complete become more and more complex.
+
+## Checking your work
+
+At the end of each phase, run `npm run test` to run the Cypress tests, and
+confirm that you have completed all of the tasks for that phase. Address any
+errors before moving on to the next phase.
 
 ## Phase 1: Creating the basic HTML5 structure
 
@@ -51,7 +59,7 @@ element.
 </html>
 ```
 
-The `html` element has two valid child elements, the `head` element and the
+The `html` element has two valid child elements, the `head` element, and the
 `body` element. Both of those tags are **non-empty tags**, which means they will
 have both an open tag and a close tag. Generally, when you add a child element
 to an existing element, you indent one level. By convention, indentation is
@@ -68,7 +76,7 @@ people use tabs instead of spaces.
 </html>
 ```
 
-Finally, add an opening and closing `title` tag as a child of the `head`. Make
+Next, add an opening and closing `title` tag as a child of the `head`. Make
 sure it has content reading "My HTML Cheat Sheet". That is the content that you
 will see in the tab or the title bar of your browser. It can be (and is, in this
 case) different from the name of your HTML file.
@@ -84,8 +92,32 @@ case) different from the name of your HTML file.
 </html>
 ```
 
+Finally, add a __favicon__ to your site. A favicon is a small icon that is
+displayed in your browser tab next to your title. To add a favicon, you can add
+a link element that specifies a path to the image. The link element does not require a closing tag. You will learn more about the link tag in future lessons.
+
+Add the following line of code directly underneath your title element:
+
+```html
+<link rel="icon" href="https://appacademy-open-assets.s3.us-west-1.amazonaws.com/Modular-Curriculum/content/week-07/sample-icon.png" />
+```
+
 And, that is a valid, minimal HTML 5 document just waiting for some happy
-content.
+content. At the end of phase 1, your file should look like this:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My HTML Cheat Sheet</title>
+    <link rel="icon" href="https://appacademy-open-assets.s3.us-west-1.amazonaws.com/Modular-Curriculum/content/week-07/sample-icon.png" />
+  </head>
+  <body>
+  </body>
+</html>
+```
+
+Save your file, then refresh your web browser. You should see your title and the sample favicon appear in the browser tab.
 
 ## Phase 2: Headings
 
@@ -126,7 +158,7 @@ this tag to your reference sheet.
 ## Phase 3: Paragraphs
 
 It will be helpful to add notes to your reference sheet. Paragraphs of
-long-form text containing complete sentences go in the `p` (paragraph) tag.
+long-form text containing complete sentences goes in the `p` (paragraph) tag.
 
 Add a one-paragraph description to help you remember how headings and
 paragraphs work.
@@ -174,7 +206,7 @@ remind yourself how to list the items.
       <h2>Lists</h2>
       <h3>Unordered Lists</h3>
       <p>
-        Unordered lists are marked with bullet points and go in `ul` tags. Each list item goes in an `li` tag.
+        Unordered lists are marked with bullet points and go in `ul` tags. Each list item goes in a `li` tag.
       </p>
       <h4>Types of lists:</h4>
       <ul>
@@ -189,7 +221,7 @@ remind yourself how to list the items.
 ### The ordered list
 
 Next is the **ordered list** (`ol`). Add a numbered list containing Polya's
-problem solving framework.
+problem-solving framework.
 
 ```html
 <html>
@@ -198,7 +230,7 @@ problem solving framework.
       <h2>Lists</h2>
       <h3>Unordered Lists</h3>
       <p>
-        Unordered lists are marked with bullet points and go in `ul` tags. Each list item goes in an `li` tag.
+        Unordered lists are marked with bullet points and go in `ul` tags. Each list item goes in a `li` tag.
       </p>
       <h4>Types of lists:</h4>
       <ul>
@@ -208,7 +240,7 @@ problem solving framework.
 
       <h3>Ordered Lists</h3>
       <p>
-        Ordered lists are numbered and go in `ol` tags. Each list item goes in an `li` tag.
+        Ordered lists are numbered and go in `ol` tags. Each list item goes in a `li` tag.
       </p>
       <h4>Polya's Problem Solving Framework</h4>
       <ol>
@@ -254,7 +286,7 @@ to DuckDuckGo to search for more information."
       </a>
     </p>
     <p>
-      Setting `target="_blank"` will open the link in a new window. See 
+      Setting `target="_blank"` will open the link in a new window. See
       <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a" target="_blank">
         MDN
       </a>
@@ -271,7 +303,7 @@ different about them?
 
 ## Phase 6: Add an image
 
-Add a new section. Add a new header that labels this is the image section.
+Add a new section. Add a new header that labels this as the image section.
 Add a paragraph. Now, in the paragraph, add an **image element** (`img`) that
 has a source attribute named "src" to which you assign the URL of the image that
 you want to see. Here's a list of URLs from which you can choose.
@@ -299,7 +331,7 @@ The alt text will also display if the image cannot be displayed for any
 reason, including a dead link or a poor internet connection.
 
 It is also important for accessibility reasons. Visually impaired internet
-users may browse the web with assistance of a screen reader. These will read
+users may browse the web with the assistance of a screen reader. These will read
 the alt text aloud to the user, allowing them to understand the image without
 seeing it.
 
@@ -307,7 +339,7 @@ More people that can use your website means more potential customers.
 
 ## Phase 7: Tables
 
-Add a new section. Add a new header that labels this is the table section.
+Add a new section. Add a new header that labels this as the table section.
 
 Tables in HTML are great for displaying tabular data, such as an address book or
 a list of product descriptions and prices. Although tables are good for keeping
@@ -407,10 +439,11 @@ Add a paragraph and describe the structure of a table and how it works.
 
 ## Phase 8: Other content section tags
 
-Here are some tags that you will definitely want to use in your own work.
-However, there's not really a section on this page to use them, really. So, add
-a new section, and add them and their summaries to a list or table of your
-reference sheet.
+Here are some tags that you will want to use in your work.
+
+However, there's not really a section on this page to use them, and there are no
+corresponding Cypress tests. So, add a new section, and add them and their
+summaries to a list or table of your reference sheet.
 
 * [article] element
 * [footer] element
@@ -421,7 +454,7 @@ reference sheet.
 
 Please read the following articles on Mozilla Developer Network to give yourself
 good exposure to forms. Add the forms that you build to one or more new sections
-in this reference sheet.
+in this reference sheet. There are no tests for this section.
 
 * [Your first form]
 * [How to structure a web form]
@@ -432,7 +465,7 @@ in this reference sheet.
 ## What you've learned
 
 You've learned how to create valid HTML 5 pages using structural and form
-elements with client side validation. Moreover, using those elements, you
+elements with client-side validation. Moreover, by using those elements, you
 created a reference sheet for yourself so that you can come back and refer to it
 as you continue to grow familiar with how to wield HTML 5 as a markup language
 to create compelling Web experiences!
