@@ -6,9 +6,11 @@ developer. Your mission is to make some improvements requested by the customer.
 
 ## Set up
 
-Clone the practice from the [starter].
+1. Clone the practice from the starter.
+2. Run `npm install` to install dependencies.
+3. Run `npm run test` to run Cypress tests after completing each phase.
 
-Once you've in VS Code, you can drag the __index.html__ file into your browser
+Once you're in VS Code, you can drag the __index.html__ file into your browser
 to view the webpage, or use the **File Explorer** to open it in your browser.
 The only file you will need to edit for this practice is __main.css__.
 
@@ -27,11 +29,17 @@ To determine the best **CSS Selector** for each request, you may either look at
 the HTML file (__index.html__), or use the element inspector in your browser's
 Developer Tools.
 
+Cypress tests are provided to confirm that your CSS generates the correct
+styling. However, the tests do not confirm that you used the most appropriate CSS
+selectors to accomplish the correct styling. **Pay close attention to the
+heading in each phase to make sure you are using the appropriate selectors for
+that phase.**
+
 ## Phase 1 - Select by id
 
 Find the title that appears between the cover image (textured paper), and the
 introduction page (outlined table). Make this title bold without modifying the
-other titles in the web page.
+other titles on the web page.
 
 <img src="https://appacademy-open-assets.s3-us-west-1.amazonaws.com/Modular-Curriculum/content/week-07/practice-css-selectors/phase1.png"
     width="530"
@@ -59,7 +67,7 @@ The designer suggests the following settings as shown in the mockup below.
 
 ```css
     position: absolute;
-    right: 1%;
+    right: 10px;
     font-size: small;
 ```
 
@@ -86,10 +94,10 @@ single line. The designer recommends `.75em` for the top and bottom margins.
 />
 
 **Third**, horizontally center the introduction and closing sections which
-appear before and after the story.
+appear before and after the story. (Hint: One way to center content is to think about your margins.)
 
 **Fourth**, please give them significant extra space before and after (`100px`),
-so they stand a part from the story itself.
+so they stand apart from the story itself.
 
 These two sections were placed within a `<pre>` tag by the original developer.
 This means they are [preformatted], so spaces and line breaks are respected by
@@ -114,36 +122,38 @@ you can review the documentation on [pseudo classes in CSS].
 
 <img src="https://appacademy-open-assets.s3-us-west-1.amazonaws.com/Modular-Curriculum/content/week-07/practice-css-selectors/phase4.png"
     width="316"
-    alt="Hide underlines on links in table of contents"
+    alt="Hide underlines on links in the table of contents"
     style="border: solid grey 4px"
 />
 
 ## Bonus Phase - Hover state and child combinators
 
+_Note: There are no tests for this phase._
+
 While continuing to hide the underlines on links in default or visited states,
 show the underline and make the link text bold when the user hovers their mouse
-over each link. This should apply to all links in the page (see introduction,
+over each link. This should apply to all links on the page (see the introduction,
 table of contents, and closing sections). The designer created this mockup to
 show the desired effect.
 
 <img src="https://appacademy-open-assets.s3-us-west-1.amazonaws.com/Modular-Curriculum/content/week-07/practice-css-selectors/phase5a.png"
     width="294"
-    alt="Show underlines on roll over of links in the table of contents"
+    alt="Show underlines on rollover of links in the table of contents"
     style="border: solid grey 4px"
 />
 
-Finally, for the links in introduction and closing sections (the `<pre>`
-blocks), please make all the links show as black text in all states. 
+Finally, for the links in the introduction and closing sections (the `<pre>`
+blocks), please make all the links show as black text in all states.
 
 <img src="https://appacademy-open-assets.s3-us-west-1.amazonaws.com/Modular-Curriculum/content/week-07/practice-css-selectors/phase5b.png"
     width="415"
-    alt="Mockup of black link in introduction"
+    alt="Mockup of a black link in introduction"
     style="border: solid grey 4px"
 />
 
 <img src="https://appacademy-open-assets.s3-us-west-1.amazonaws.com/Modular-Curriculum/content/week-07/practice-css-selectors/phase5c.png"
     width="415"
-    alt="Mockup of black link on roll over in introduction"
+    alt="Mockup of black link on rollover in introduction"
     style="border: solid grey 4px"
 />
 
@@ -159,7 +169,6 @@ You practiced multiple ways to adjust HTML elements using CSS selectors
 * state (a.k.a. pseudo-class)
 * child combinators
 
-[starter]: https://github.com/appacademy/practice-for-week-07-css-selectors
 [CSS selector documentation]: https://developer.mozilla.org/en-US/docs/Glossary/CSS_Selector
 [pseudo classes in CSS]: https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
 [preformatted]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre

@@ -5,9 +5,11 @@ Now, it's time to practice your understanding of the
 
 ## Set up
 
-Clone the practice from the [starter].
+1. Clone the practice from the starter.
+2. Run `npm install` to install dependencies.
+3. Run `npm test` after completing each phase.
 
-Once you've in VS Code, you can drag the __index.html__ file into your browser
+Once you're in VS Code, you can drag the __index.html__ file into your browser
 to view the webpage, or use the **File Explorer** to open it in your browser.
 The only file you will need to edit for this practice is __main.css__.
 
@@ -18,6 +20,12 @@ The only file you will need to edit for this practice is __main.css__.
 
 You will begin with a web page that has all of the HTML and a little CSS
 completed. You only need to add to the CSS to complete each phase.
+
+After completing each phase, you can run the Cypress tests to confirm that you
+applied the correct styling. Keep in mind that often **there are many ways to
+accomplish the same goal with CSS**. The Cypress tests only evaluate the final
+output, but does not evaluate the approach you took to get to the output. Feel
+free to refactor your CSS and try multiple approaches!
 
 ## Phase 1 - Borders
 
@@ -40,26 +48,28 @@ The second step box should be given a border that is:
 Now, it's time to explore the `color` property.
 
 First, change the `color` of the first text to `#FFC300`.
-You can also try different hexidecimal color options to see how it affects
+You can also try different hexadecimal color options to see how it affects
 the text.
 
 Next, use the rgb property to change the `color` of the second text.
 
-Set the rgb of the text `color` to (214,122,127).
+Set the rgb of the text `color` to (235, 62, 71).
 
 Finally, the boxes text will be easier to read with the set `background-color`.
 
-## Phase 3 - Opacity and Shadows
+## Phase 3 - Opacity
 
-Now, you can turn your attention the opacity of Box 3.
+Now, you can turn your attention to the opacity of Box 3.
 
 The first step is to change the `background-color` of the box using the rgba
 properties. Change the opacity of the box to 0.6.
 
-Afterwards, you can also manipulate the text's opacity by changing every h2's
+Afterward, you can also manipulate the text's opacity by changing every h2's
 opacity to 0.5 for additional practice.
 
-Next, is to add box shadows to boxes 5 and 6.
+## Phase 4 - Shadows
+
+Next, add box shadows to boxes 5 and 6.
 
 Box 5 requires a box shadow with:
 
@@ -74,8 +84,8 @@ Box 6 requires a shadow with:
 2. 10px above
 3. a color of `#800000`
 
-Finally, you have learned how to manipulate common CSS properties to add special
-features to your projects.
+You have learned how to manipulate common CSS properties to add special
+features to your projects. Run the tests one more time to make sure everything has the correct styling.
 
 ## What you've learned
 
@@ -89,5 +99,3 @@ with the **CSS: Colors, Borders, and Shadows**. This includes setting
 * `rgba`
 * `opacity`
 * `box-shadow`
-
-[starter]: https://github.com/appacademy/practice-for-week-07-css-colors-borders-and-shadows
