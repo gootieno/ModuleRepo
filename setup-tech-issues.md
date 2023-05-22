@@ -89,7 +89,7 @@ npm install cypress@9.2.0
 ```
 or
 ```
-npm clear cache --force
+npm cache clear --force
 npm install cypress
 ```
 
