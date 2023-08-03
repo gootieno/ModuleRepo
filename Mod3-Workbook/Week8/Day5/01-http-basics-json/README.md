@@ -1,22 +1,115 @@
 # Practice: HTTP Basics in a JSON file
 
 In this practice, you will document the request and response components for
-RESTful endpoints of **traditional HTML web server** in a JSON file.
+RESTful endpoints of a **traditional HTML web server** in a JSON file.
 
 ## Set up
 
-See the original [HTTP Basics practice] for instructions on how to set up the
-server that you will document the endpoints for.
+1. Clone the practice from GitHub.
+2. Run `npm install` at the root of the project to install dependencies.
 
-Clone the practice from the [starter].
+To set up the server that you will test endpoints on, `cd` inside of the
+**server** folder and run `npm install` inside of the **server** folder.
+
+This is the same server you worked with previously in the HTTP Basics Long
+Practice. **Do not to look at the contents of the server folder until you finish
+this exercise.**
+
+To start the server, run `npm start` inside of the **server** folder. This will
+allow you to make requests to [http://localhost:5000] using any client, such as
+your browser or Postman.
+
+To stop the server from listening to requests, press `CTRL + c` for
+Windows/Linux or `CMD + c` for MacOS in the terminal that you started the server
+(wherever you ran `npm start`). To restart a stopped server, run `npm start`
+again.
+
+> Note: Make sure to stop the server when you are finished with this practice.
+> Leaving a server running may prevent servers in other practices/exercises
+> from starting properly.
 
 ## Instructions
 
-Document the server in the original [HTTP Basics practice] in the
-__starter.json__ JSON file provided to you.
+Document the server from the original [HTTP Basics practice] in the
+__answers.json__ JSON file provided to you.
 
-Once you're finished, compare your JSON file with the solution code that will
-be provided to you later at some point.
+Once you're finished, you can run ALL of the tests using `npm test` from the
+root of the project.
+
+You may also run each test individually, using `npm run test-<NUM>`, and
+replacing `<NUM>` with a number between 01 and 15 (corresponding to the endpoint
+number in the __answers.json__ file).
+
+### Documentation
+
+The documentation for this server should be written in the `answers.json` file
+provided to you. For each endpoint listed below, list out the request and
+response components in the `answers.json` file.
+
+#### Headers Formatting
+
+**Include only necessary headers.**
+
+To add a header as a component to the request or response, define the key and
+value of a header in a JSON object set to the `headers` key on the `request`
+or `response` object. **All the endpoints are RESTful endpoints for a
+traditional web server.**
+
+Here's an example:
+
+```json
+"headers": {
+  "Content-Type": "application/x-www-form-urlencoded"
+}
+```
+
+#### Request Body Formatting
+
+To add a `body` as a component to the request, define the data structure of the
+`body` (object, array, nested object, or nested array). The values for objects
+in the `body` must be a truthy value.
+
+Here's an example:
+
+```json
+"body": {
+  "color": true,
+  "toolbox": [
+    {
+      "tool": true
+    }
+  ]
+}
+```
+
+#### Response Body Formatting
+
+If there is a response body for the endpoint, set the `body` key in the
+`response` object to `true` or a truthy value.
+
+Here's an example:
+
+```json
+"body": true
+```
+
+#### Removing a Component
+
+To omit a component from the request or response, set the key of that request
+or response component to `false`.
+
+For example, to omit the `headers` of the request, change the `headers` key from
+`null` to `false`.
+
+```json
+"headers": false,
+```
+
+To omit the `body` of the request, change the `body` key from `null` to `false`.
+
+```json
+"body": false
+```
 
 ## Reminders about an HTML Web Server
 
@@ -135,5 +228,4 @@ their values are:
 - `Location` (when the server redirects):
   - url that server wants to redirect the client to
 
-[starter]: https://github.com/appacademy/practice-for-week-08-http-basics-json
 [HTTP Basics practice]: https://github.com/appacademy/practice-for-week-08-http-basics-long-practice

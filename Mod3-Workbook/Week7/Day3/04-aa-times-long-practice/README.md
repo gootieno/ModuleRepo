@@ -1,11 +1,12 @@
 # Long Practice: Responsive Design - The App Academy Times
 
-It's now time to put the responsive design content that you've learned, this
-week, together with event handling and selection that you have previously
-learned, to make a compelling and pleasing Web page! You're going to get to
-build this from the ground up with the same type of input that you'd get in a
-real job. On each step, talk with your pair, decide now you want to attack the
-problem, and get coding!
+It's now time to use the responsive design content that you've learned this week
+to make a compelling and pleasing web page! Specifically, you will focus on
+using **Grid**, **Flexbox**, and **Media Queries** to meet project requirements.
+
+You're going to get to build this from the ground up with the same type of input
+that you'd get in a real job. On each step, talk with your pair, decide now you
+want to attack the problem, and get coding!
 
 When working as a full-stack developer, you'll often collaborate with a
 designer. Most likely they will provide you with a sequence of screenshots and
@@ -14,7 +15,7 @@ specifications for you to convert into neat, maintainable HTML and CSS.
 ![aa-times-large][aa-times-large]
 
 They will often provide you screenshots of what the website will look like at
-specific sizes as well. For example below is what the website should look like
+specific sizes as well. For example, below is what the website should look like
 at 1020px:
 
 ![aa-times-medium][aa-times-medium]
@@ -26,13 +27,13 @@ than 1020px wide:
 
 This practice is similar to that experience, in that you will receive
 requirements for each section of the page. Then, it's up to you and your pair to
-write the HTML, CSS, and smattering of JavaScript to make it do what you need it
-to do. Each step of the way will give you the requirements for the section that
-you'll work on. There will also be guidance and suggestions for you so that you
-can get some hints, if you need.
+write the HTML and CSS to make it do what you need it to do. Each step of the
+way will give you the requirements for the section that you'll work on. There
+will also be guidance and suggestions for you so that you can get some hints, if
+needed.
 
 Though this is a big practice, you'll do it step-by-step. As a developer, that's
-what you do: take a big project and break them down into smaller pieces that you
+what you do: take a big project and break it down into smaller pieces that you
 can accomplish piece-by-piece. There will be a lot of advice given during this
 practice so you can get a feel for how to go about doing each of the steps.
 
@@ -81,9 +82,8 @@ The following sections explain in more detail the purpose of each file.
 ### The index.html file
 
 This is where you will put the HTML that will define the content and structure
-of the Web page. Right now, it's empty. In the first step, you'll start adding
-to it. Right now, it's empty. In the first step, you'll use Emmet to add
-standard HTML 5 structure to this file. Then, you'll add the most common
+of the Web page. Right now, it's empty. In the first step, you'll use Emmet to
+add standard HTML 5 structure to this file. Then, you'll add the most common
 top-level structural elements, too: `header`, `main`, and `footer`.
 
 ### The event-handling.js file
