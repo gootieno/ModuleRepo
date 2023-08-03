@@ -17,8 +17,8 @@ text, image, text, text, image, text!
 
 ![interests bar marked up]
 
-So, that's nine columns and one row. This is a candidate for either flexbox or
-CSS Grid Layout. When it comes down to it, CSS Grid Layout has a nicer syntax
+So, that's nine columns and one row. This is a candidate for **either flexbox or
+CSS Grid Layout**. When it comes down to it, CSS Grid Layout has a nicer syntax
 for declaring column widths. They appear to have the following relative sizes:
 1, 2, 1, 2, 1, 2, 2, 1, 0.75. You can use those to define the column widths of
 your grid. Or, if you don't like that weird 0.75 hanging out there, change it to
@@ -58,6 +58,14 @@ the colors found in the layout above:
 Then, the styles for the specific presentation are put in rules that target
 those selectors.
 
+## Interests Links Media Query
+
+Next, implement a media query for small screens.
+
+When the page is less than 1000 pixels wide, remove the interests bar, so the header content matches the header in the screenshot below. You will add the article content in the next phase.
+
+![aa-times-small]
+
 ## More tips
 
 Here are some tips about how to do it.
@@ -74,3 +82,4 @@ Here are some tips about how to do it.
 [interests bar subclasses shown]: https://appacademy-open-assets.s3-us-west-1.amazonaws.com/Module-Responsive-Design/response-design-projects/aa-times/assets/interests-bar-subclasses-shown.png
 [interests bar layout]: https://appacademy-open-assets.s3-us-west-1.amazonaws.com/Module-Responsive-Design/response-design-projects/aa-times/assets/interest-bar-layout.svg
 [interests bar done]: https://appacademy-open-assets.s3-us-west-1.amazonaws.com/Module-Responsive-Design/response-design-projects/aa-times/assets/interests-bar-done.png
+[aa-times-small]: https://appacademy-open-assets.s3-us-west-1.amazonaws.com/Module-Responsive-Design/response-design-projects/aa-times/assets/1000px-mobile-aa-times.png

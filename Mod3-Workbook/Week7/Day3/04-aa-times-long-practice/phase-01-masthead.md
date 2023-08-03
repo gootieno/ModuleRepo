@@ -7,7 +7,7 @@ see in the screenshot above. This screenshot is available for you to open and
 refer to in **specifications/screenshots/masthead.png**. You may want to open it
 and keep it around to refer to while you're working.
 
-## Strategy: creating Web pages from mockups
+## Strategy: Creating Web pages from mockups
 
 In general, creating actual HTML from some image, mockup, or sketch, consists of
 breaking the content into the rectangles that bound each visible section. Then,
@@ -17,9 +17,10 @@ to you and what you know.
 Because HTML is a top-to-bottom kind of display, normally, it is nice to look
 and see if you can spot different rows. Then, once you have the rows figured
 out, you split them into columns to determine how to layout the elements. If
-they form a nice grid (or grid-ish), then you should use the CSS Grid layout. If
-they don't, then you should use block elements that contain sub-sections that
-use the CSS Grid layout or the Flexible Box Model (flexbox).
+they form a nice grid (or grid-ish), then you should use the **CSS Grid**
+layout. If they don't, then you should use block elements that contain
+sub-sections that use the CSS Grid layout or the **Flexible Box Model**
+(flexbox).
 
 Take a look at the masthead above to see if you can see rows of content. It
 seems that there are three or four rows. When in doubt, start with the fewest
@@ -255,11 +256,11 @@ The content for the upper right corner is three elements:
 Once you add that, you should be able to refresh the page and see the three
 elements!
 
-Use flexbox to get those three elements into a row and aligned right. Remember
-that when you "justify content" in a flexbox container, you don't use directions
-like "left" and "right"; instead, you use "flex-start" and "flex-end". Also
-these icons should be vertically centered too, so you should use the same
-`align-items` as you did on the other masthead icons.
+Use **flexbox** to get those three elements into a row and aligned right.
+Remember that when you "justify content" in a flexbox container, you don't use
+directions like "left" and "right"; instead, you use "flex-start" and
+"flex-end". Also these icons should be vertically centered too, so you should
+use the same `align-items` as you did on the other masthead icons.
 
 ![masthead action buttons]
 
@@ -346,6 +347,16 @@ consistently. spacing is applied consistently, and the code is fairly terse.
 The CSS should be consistently indented and aligned. And the properties in each
 of the rules are in alphabetical order. These little things make huge
 differences later for maintainability. Try to be neat with your programming.
+
+> _Something to think about_: In this phase, you implemented some layout though
+> **Grid** and also may have implemented some layout using **Flexbox**. Both
+> approaches are just tools in your toolbox. You may have a general preference
+> for one approach over the other. As you gain experience, you may find that
+> certain tasks or sections of a page lend themselves more to Grid than Flex,
+> and vice versa. Throughout the rest of this practice, try to practice using
+> both **Grid** and **Flex**. One is not necessarily better than the other, but
+> your goal right now is to become comfortable using both approaches to achieve
+> the specified layouts.
 
 Now, it's on to the next step!
 
