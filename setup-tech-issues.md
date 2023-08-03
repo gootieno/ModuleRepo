@@ -1,4 +1,12 @@
-Npm install not working
+# **SSH**
+
+Bills SSH walkthrough:
+https://hackmd.io/@AgDXdHgSSPKsJIhCxlaTuA/BJtNu88fF
+
+# **NPM Issues**
+
+
+npm install not working
 ```
 nvm install 14
 nvm use 14
@@ -81,6 +89,36 @@ npm install cypress@9.2.0
 ```
 or
 ```
-npm clear cache --force
+npm cache clear --force
 npm install cypress
+```
+
+Problem:
+
+```
+sh: cypress: command not found
+```
+
+Solution:
+Install cypress globally using
+```
+npm install -g cypress@9.2.0
+```
+
+
+# FORGOT UBUNTU PASSWORD
+
+Open powershell:
+```
+ubuntu config --default-user root
+```
+Open Ubuntu:
+```
+passwd STUDENTSUSERNAME
+```
+change their password
+
+Go back to Powershell:
+```
+ubuntu config --default-user STUDENTSUSERNAME
 ```

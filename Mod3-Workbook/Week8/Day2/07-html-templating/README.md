@@ -6,7 +6,11 @@ send the HTML file as a response.
 
 ## Set up
 
-Clone the project from the [starter].
+1. Clone the practice from GitHub.
+2. Run `npm install` to install dependencies.
+3. Start the server by running `node server.js`.
+3. Run `npm run test-basic` to run the tests after completing the basic phases,
+   and `npm run test-bonus` after completing the bonus phases.
 
 ## Background and Context
 
@@ -26,7 +30,7 @@ and information about all the dogs on your server.
 Near the top of the **server.js** file, you will see the following code:
 
 ```js
-let dogs = [
+const dogs = [
   {
     dogId: 1,
     name: 'Fido',
@@ -74,12 +78,15 @@ has the specified `dogId` as the value for the `dogId` property.
 ```js
 // example for finding a dog by its dogId
 const dogId = 2;
-const fluffy = dog.find(dog => dog.dogId == dogId);
+const fluffy = dogs.find(dog => dog.dogId === Number(dogId));
 ```
 
 Start the server by running `node server.js`. You should be able to see the
 Home page by navigating to [http://localhost:5000] on the browser or making a
 `GET` request on Postman with that URL path.
+
+_To reset the server, close the server, then run `node
+server.js` to re-start the server with its original seed data._
 
 ## Phase 1: GET /dogs
 
@@ -125,6 +132,9 @@ the **views** folder with the identified dog's details.
 Make sure to test this out by navigating to the dog detail page on the browser
 or sending a request on Postman. You can use a `:dogId` of `1` or `2` to test
 your server response.
+
+After manually testing your server, run the Cypress tests for phases 1-3 by
+running `npm run test-basic`.
 
 ## Bonus Phases
 
@@ -206,4 +216,5 @@ and the `message` variable in the template should be replaced with
 Test each of the route handlers by making a request to its route with an invalid
 `dogId` like `2348`.
 
-[starter]: https://github.com/appacademy/practice-for-week-08-html-templating
+After manually testing your server, run the Cypress tests for bonus phases 4-7
+by running `npm run test-bonus`.

@@ -29,5 +29,5 @@ If you wish, you may also add your own flair to the styling. You can choose to
 create a CSS file, use inline-styles with JavaScript, or a mix of both.
 
 [starter]: https://github.com/appacademy/practice-for-week-09-catsagram-long-practice-day-1
-[API documentation]: https://docs.thecatapi.com/api-reference/images/images-search
+[API documentation]: https://developers.thecatapi.com/view-account/ylX4blBYT9FaoVd6OhvR?report=bOoHBz-8t
 [http://localhost:5000]: http://localhost:5000

@@ -1,7 +1,7 @@
 const http = require('http');
 const fs = require("fs");
 
-let dogs = [
+const dogs = [
   {
     dogId: 1,
     name: 'Fido',
@@ -79,7 +79,7 @@ const server = http.createServer((req, res) => {
     if (req.method === 'GET' && req.url === '/') {
       const htmlPage = fs.readFileSync("./views/index.html", 'utf-8');
       const resBody = htmlPage;
-      
+
       res.statusCode = 200;
       res.setHeader("Content-Type", "text/html");
       res.write(resBody);
@@ -95,13 +95,13 @@ const server = http.createServer((req, res) => {
     if (req.method === 'GET' && req.url === '/dogs/new') {
       // Your code here
     }
-    
+
     // Phase 3: GET /dogs/:dogId
     if (req.method === 'GET' && req.url.startsWith('/dogs/')) {
       const urlParts = req.url.split('/');
       if (urlParts.length === 3) {
         const dogId = urlParts[2];
-        const dog = dogs.find(dog => dog.dogId == dogId);
+        const dog = dogs.find(dog => dog.dogId === Number(dogId));
         // Your code here
       }
     }
@@ -116,7 +116,7 @@ const server = http.createServer((req, res) => {
       const urlParts = req.url.split('/');
       if (urlParts.length === 4 && urlParts[3] === 'edit') {
         const dogId = urlParts[2];
-        const dog = dogs.find(dog => dog.dogId == dogId);
+        const dog = dogs.find(dog => dog.dogId === Number(dogId));
         // Your code here
       }
     }
@@ -126,7 +126,7 @@ const server = http.createServer((req, res) => {
       const urlParts = req.url.split('/');
       if (urlParts.length === 3) {
         const dogId = urlParts[2];
-        const dog = dogs.find(dog => dog.dogId == dogId);
+        const dog = dogs.find(dog => dog.dogId === Number(dogId));
         // Your code here
       }
     }
@@ -135,7 +135,7 @@ const server = http.createServer((req, res) => {
     const htmlPage = fs.readFileSync("./views/error.html", 'utf-8');
     const resBody = htmlPage
       .replace(/#{message}/g, 'Page Not Found');
-    
+
     res.statusCode = 404;
     res.setHeader("Content-Type", "text/html");
     res.write(resBody);

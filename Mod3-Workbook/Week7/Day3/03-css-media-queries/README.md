@@ -4,9 +4,11 @@ In this practice, you will use media queries to improve a web page.
 
 ## Set up
 
-Clone the practice from the [starter].
+1. Clone the practice from the starter.
+2. Run `npm install` to install dependencies.
+3. Run `npm test` to run the Cypress tests after completing each phase.
 
-Once you've in VS Code, you can drag the __index.html__ file into your browser
+Once you're in VS Code, you can drag the __index.html__ file into your browser
 to view the webpage, or use the **File Explorer** to open it in your browser.
 The only file you will need to edit for this practice is __main.css__.
 
@@ -21,10 +23,12 @@ to add __media queries__ to the CSS.
 ## Phase 1: Layout adjustments
 
 Here are the designer's mockups for various screen sizes. What's already
-implemented covers the extremely narrow and narrow cases.
+implemented covers the extremely narrow and narrow cases. The Cypress tests for these two cases are already passing.
 
 Please implement the "moderate" and "wide" cases. The moderate
 option is for more than 820 pixels and the wide option is for 1220 pixels or more.
+
+When you finish Phase 1, run the Cypress tests. Make sure that the first five tests are passing after making your layout adjustments. _The sixth test may challenge you to refactor your solution - can you do it without changing the default layout values for the `.sidebar` class?_
 
 > Note: The following images are scaled down to fit into the instructions.
 > You can right click and select "Open Image in New Tab" to see them full-size.
@@ -106,5 +110,3 @@ Can you make the print out look like this?
      width="615"
      alt="Print Preview"
 />
-
-[starter]: https://github.com/appacademy/practice-for-week-07-css-media-queries

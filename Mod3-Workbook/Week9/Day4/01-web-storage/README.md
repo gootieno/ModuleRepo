@@ -5,7 +5,7 @@ for a web application.
 
 ## Set up
 
-Clone the practice from the [starter].
+Clone the practice from the starter.
 
 Run `node app.js` from the base directory to start the server which will serve
 the static assets in the practice. Navigate to [http://localhost:5000] in your
@@ -207,5 +207,4 @@ You put into practice the following features:
   **Developer Tools**
 
 [1]: https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API
-[starter]: https://github.com/appacademy/practice-for-week-09-web-storage
 [http://localhost:5000]: http://localhost:5000

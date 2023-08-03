@@ -5,18 +5,93 @@ RESTful endpoints of a **JSON API server** in a JSON file.
 
 ## Set up
 
-See the original [Music Archive Docs practice] for instructions on how to set up
-the server that you will document the endpoints for.
+1. Clone the practice from GitHub.
+2. Run `npm install` at the root of the project to install dependencies.
 
-Clone the practice from the [starter].
+To set up the server that you will test your endpoints on, run `npm install`
+inside of the __server__ folder. Please do not to look at the contents of the
+__server__ folder until you finish this project.
+
+To start the server, run `npm start` inside of the __server__ folder. This will
+allow you to make requests to [http://localhost:5000] using any client (browser
+and Postman).
+
+To stop the server from listening to requests, press `CTRL + c` for
+Windows/Linux or `CMD + c` for MacOS in the terminal that you started the server
+(wherever you ran `npm start`). When you restart the server, it will be
+re-seeded with all of the original data.
 
 ## Instructions
 
-Document the server in the original [Music Archive Docs practice] in the
-__starter.json__ JSON file provided to you.
+Document the server in the __answers.json__ JSON file provided to you. You can
+make your requests to the server through Postman or through using `fetch` in the
+browser.
 
-Once you're finished, compare your JSON file with the solution code that will
-be provided to you later at some point.
+Once you're finished, you can run ALL of the tests using `npm test` from the
+root directory.
+
+You may also run each test individually, using `npm run test-<NUM>`, and
+replacing `<NUM>` with a number between 01 and 17 (corresponding to the endpoint
+number in the __answers.json__ file).
+
+### Documentation
+
+The documentation for this server should be written in the `answers.json` file
+provided to you. For each endpoint listed below, list out the request and
+response components in the `answers.json` file.
+
+#### Headers Formatting
+
+**Include only necessary headers.**
+
+To add a header as a component to the request or response, define the key and
+value of a header in a JSON object set to the `headers` key on the `request`
+or `response` object.
+
+Here's an example:
+
+```json
+"headers": {
+  "Content-Type": "application/json"
+}
+```
+
+#### Request/Response Body Formatting
+
+To add a `body` as a component to the request, define the data structure of the
+`body` (object, array, nested object, or nested array). The values for objects
+in the `body` must be a truthy values.
+
+Here's an example:
+
+```json
+"body": {
+  "color": true,
+  "toolbox": [
+    {
+      "tool": true
+    }
+  ]
+}
+```
+
+#### Removing a Component
+
+To omit a component from the request or response, set the key of that request
+or response component to `false`.
+
+For example, to omit the `headers` of the request, change the `headers` key from
+`null` to `false`.
+
+```json
+"headers": false,
+```
+
+To omit the `body` of the request, change the `body` key from `null` to `false`.
+
+```json
+"body": false
+```
 
 ## Reminders about a JSON API server
 
@@ -76,6 +151,3 @@ are:
 
 - `Content-Type` (when the response has a body):
   - "application/json"
-
-[starter]: https://github.com/appacademy/practice-for-week-08-music-archive-docs-json
-[Music Archive Docs practice]: https://github.com/appacademy/practice-for-week-08-music-archive-docs-long-practice
