@@ -30,7 +30,7 @@ If any issues occur with install close and open terminal
 
 # **CYPRESS**
 
-Problem: Your system is missing the dependency: Xvfb
+## Problem: Your system is missing the dependency: Xvfb
 Solution 1: Have them run:
 ```
 sudo apt update
@@ -43,46 +43,61 @@ sudo apt-get update
 sudo apt-get install libgtk2.0-0 libgtk-3-0 libgbm-dev libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2 libxtst6 xauth xvfb
 ```
 
-Problem: Cypress verification timed out after 30000 milliseconds
+---
+## Problem: Cypress verification timed out after 30000 milliseconds
+
 Solution:
 increase the default timeout.
-Open node_modules\cypress\lib\tasks\verify.js, search for VERIFY_TEST_RUNNER_TIMEOUT_MS and change it from 30000 (default) to 100000.
+```
+1. Open node_modules\cypress\lib\tasks\verify.js
+2. Search for VERIFY_TEST_RUNNER_TIMEOUT_MS
+3. Change it from 30000 (default) to 100000.
+```
 Save the file, then try to open the runner.
 
-timeout issue still happening? Make sure the code is absolutely correct
 
-Problem: Cypress not found (on Mac)
+## Problem: Cypress not found (on Mac)
+
 Solution: download Cypress directly from our CDN
 
-Problem: Cypress cannot run because this binary file does not have executable permissions here: (on Mac)
+
+## Problem: Cypress cannot run because this binary file does not have executable permissions here: (on Mac)
 
 ```
 /Users/${username}/Library/Caches/Cypress/${version-number$}/Cypress.app/Contents/MacOS/Cypress
 ```
+
 Solution:
 ```
 chmod 755 /Users/${username}/Library/Caches/Cypress/${version-number$}/Cypress.app/Contents/MacOS/Cypress
 ```
 (Replace ${} with actual username and version numbers!)
 
-Problem: Cypress failed to start (on Mac)
+
+## Problem: Cypress failed to start (on Mac)
+
 Solution: Delete cache folder from:
+
 ```
 /Users/${username}/Library/Caches/Cypress/
 ```
+
 Reinstall Cypress using
 ```
 npm install
 https://github.com/cypress-io/cypress/issues/4089
 ```
-Problem: cypress: command not found (on mac) after running npm run test
+
+---
+## Problem: cypress: command not found (on mac) after running npm run test
+
 Solution: change path in package.json to ./node_modules/.bin/cypress
 
-Problem:
+---
+## Problem: Cypress failed to start.
 
-Cypress failed to start.
+Solution: This is usually caused by a missing library or dependency.
 
-This is usually caused by a missing library or dependency.
 
 ```
 npm install cypress@9.2.0
@@ -93,7 +108,7 @@ npm cache clear --force
 npm install cypress
 ```
 
-Problem:
+## Problem:
 
 ```
 sh: cypress: command not found
@@ -101,10 +116,38 @@ sh: cypress: command not found
 
 Solution:
 Install cypress globally using
+
 ```
 npm install -g cypress@9.2.0
 ```
 
+## Problem: "username" is not in the sudoers file
+
+Solution:
+
+```
+Open Powershell:
+ubuntu config --default-user root
+
+Open Ubuntu:
+sudo usermod -aG sudo ubuntuusername
+
+Close Ubuntu
+
+ubuntu config --default-user ubuntuusername
+```
+
+## Problem: `unable to open X server or $DISPLAY` while running cypress
+
+Solution:
+
+```
+1. Open .bashrc
+2. Add
+export DISPLAY=:0
+
+3. Save, source .bashrc (or close) and try again
+```
 
 # FORGOT UBUNTU PASSWORD
 
